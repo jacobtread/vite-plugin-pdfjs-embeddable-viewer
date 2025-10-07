@@ -81,6 +81,15 @@ export default function pdfjsEmbeddableViewer(
               content = content.replace("validateFileURL(file);", "");
             }
 
+            // Ensure that the document event handler is always run first
+            content = content.replace(
+              "parent.document.dispatchEvent(event);",
+              `
+              document.dispatchEvent(event);
+              parent.document.dispatchEvent(event);
+            `
+            );
+
             return content;
           },
           rename,
