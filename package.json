@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/jacobtread/vite-plugin-pdfjs-embeddable-viewer",
   "scripts": {
+    "prepublish": "npm run build",
     "dev": "tsdown --watch",
     "build": "tsdown",
     "setup:pdfjs": "node scripts/fetchPdfjs.js"
