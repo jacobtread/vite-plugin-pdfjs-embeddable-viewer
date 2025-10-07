@@ -7,6 +7,8 @@ This plugin exposes options to make it easy to configure for use cases such as:
 - Disabling JavaScript
 - Allow viewing PDF's from another Origin
 
+# Config
+
 ## Basic Embedding
 
 Below is a basic configuration you probably also want to look at the other options below to
@@ -83,3 +85,13 @@ export default defineConfig({
   ],
 });
 ```
+
+# Building
+
+To build yourself you must run the following command to download pdfjs:
+
+```
+npm run setup:pdfjs
+```
+
+The version downloaded will be based on the version specified in `scripts/fetchPdfjs.js`

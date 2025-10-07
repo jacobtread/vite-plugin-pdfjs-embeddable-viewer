@@ -9,13 +9,15 @@
   "types": "./dist/index.d.ts",
   "exports": "./dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "vendor"
   ],
   "engines": {
     "node": "^18.0.0 || >=20.0.0"
   },
   "scripts": {
-    "build": "tsdown"
+    "build": "tsdown",
+    "setup:pdfjs": "node scripts/fetchPdfjs.js"
   },
   "peerDependencies": {
     "vite": "^5.0.0 || ^6.0.0 || ^7.0.0"
