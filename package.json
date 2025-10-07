@@ -9,8 +9,10 @@
   "types": "./dist/index.d.ts",
   "exports": "./dist/index.js",
   "files": [
-    "dist",
-    "vendor"
+    "dist/",
+    "vendor/",
+    "vendor/pdfjs",
+    "vendor/pdfjs-legacy"
   ],
   "engines": {
     "node": "^18.0.0 || >=20.0.0"
