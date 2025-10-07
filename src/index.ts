@@ -42,7 +42,7 @@ interface PdfjsEmbeddableViewerOptions {
 }
 
 export default function pdfjsEmbeddableViewer(
-  config: PdfjsEmbeddableViewerOptions
+  config: PdfjsEmbeddableViewerOptions = {}
 ): Plugin[] {
   const legacy = config.legacy ?? false;
   const viewerDirName = legacy ? "pdfjs-legacy" : "pdfjs";
