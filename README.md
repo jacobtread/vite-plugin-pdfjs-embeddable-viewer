@@ -1,0 +1,1 @@
+# Vite plugin pdfjs embeddable viewer
