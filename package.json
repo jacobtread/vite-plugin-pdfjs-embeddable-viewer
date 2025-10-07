@@ -15,7 +15,13 @@
   "engines": {
     "node": "^18.0.0 || >=20.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobtread/vite-plugin-pdfjs-embeddable-viewer.git"
+  },
+  "homepage": "https://github.com/jacobtread/vite-plugin-pdfjs-embeddable-viewer",
   "scripts": {
+    "dev": "tsdown --watch",
     "build": "tsdown",
     "setup:pdfjs": "node scripts/fetchPdfjs.js"
   },
