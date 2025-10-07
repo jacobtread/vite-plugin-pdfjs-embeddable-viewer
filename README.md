@@ -1,4 +1,4 @@
-# Vite plugin pdfjs embeddable viewer
+# vite-plugin-pdfjs-embeddable-viewer
 
 This is a vite plugin which makes it easy to embed the [Mozilla pdf.js](https://github.com/mozilla/pdf.js/) PDF viewer into your 
 project.
@@ -7,9 +7,15 @@ This plugin exposes options to make it easy to configure for use cases such as:
 - Disabling JavaScript
 - Allow viewing PDF's from another Origin
 
-# Config
+## Installation
 
-## Basic Embedding
+```
+npm i --save-dev vite-plugin-pdfjs-embeddable-viewer
+```
+
+## Config
+
+### Basic Embedding
 
 Below is a basic configuration you probably also want to look at the other options below to
 enable some of the features and options
@@ -26,7 +32,7 @@ export default defineConfig({
 });
 ```
 
-## Disabling JavaScript
+### Disabling JavaScript
 
 For security reasons you probably don't want PDF's running JavaScript, the following setup disables JavaScript in PDF files: 
 
@@ -47,7 +53,7 @@ export default defineConfig({
 });
 ```
 
-## Disable Cross Origin Check
+### Disable Cross Origin Check
 
 By default the pdf.js viewer prevents cross origin document loading. You can disable
 this default behavior using "allowCrossOrigin"
@@ -66,7 +72,7 @@ export default defineConfig({
 });
 ```
 
-## Include Credentials
+### Include Credentials
 
 To include credentials in the request (Cookies, ...etc) use the following option:
 
@@ -86,7 +92,7 @@ export default defineConfig({
 });
 ```
 
-# Building
+## Building
 
 To build yourself you must run the following command to download pdfjs:
 
