@@ -79,7 +79,7 @@ export default defineConfig({
   plugins: [
     pdfjsEmbeddableViewer({
       openOptions: { 
-        includeCredentials: true 
+        withCredentials: true 
       }
     }),
   ],
